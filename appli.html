@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application form</title>
+</head>
+<body>
+    <section class="bed-application-form">
+        <h2>Apply for a Hospital Bed</h2>
+        <form action="#" method="POST">
+          <div class="form-group">
+            <label for="patientName">Patient Full Name</label>
+            <input type="text" id="patientName" name="patientName" required>
+          </div>
+      
+          <div class="form-group">
+            <label for="age">Patient Age</label>
+            <input type="number" id="age" name="age" required min="0">
+          </div>
+      
+          <div class="form-group">
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender" required>
+              <option value="">--Select Gender--</option>
+              <option value="female">Female</option>
+              <option value="male">Male</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <label for="admissionDate">Preferred Admission Date</label>
+            <input type="date" id="admissionDate" name="admissionDate" required>
+          </div>
+      
+          <div class="form-group">
+            <label for="department">Required Department</label>
+            <select id="department" name="department" required>
+              <option value="">--Select Department--</option>
+              <option value="general">General Ward</option>
+              <option value="icu">ICU</option>
+              <option value="maternity">Maternity</option>
+              <option value="surgical">Surgical Ward</option>
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <label for="contactNumber">Contact Phone Number</label>
+            <input type="tel" id="contactNumber" name="contactNumber" required>
+          </div>
+      
+          <div class="form-group">
+            <label for="notes">Additional Notes</label>
+            <textarea id="notes" name="notes" rows="4" placeholder="Any additional information..."></textarea>
+          </div>
+      
+          <button type="submit">Submit Application</button>
+        </form>
+      </section>      
+</body>
+<style>
+    .bed-application-form {
+    background-color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+.bed-application-form h2 {
+    font-size: 30px;
+    color: blue;
+    margin-bottom: 30px;
+}
+.bed-application-form form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.bed-application-form .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+.bed-application-form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+.bed-application-form input,
+.bed-application-form select,
+.bed-application-form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+.bed-application-form button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.bed-application-form button:hover {
+    background-color: rgb(139, 139, 219);
+}
+
+</style>
+</html>
